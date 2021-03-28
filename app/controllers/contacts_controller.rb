@@ -12,7 +12,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
       if@contact.deliver 
-        #ContactMailer.contact(@contact).deliver_now
+        ContactMailer.contact(@contact).deliver_now
         flash.now[:error] = nil
       else
         flash.now[:error] = 'Failed to send message.'
