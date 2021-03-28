@@ -124,11 +124,11 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false  
   config.action_mailer.default :charset => "utf-8"  
   config.action_mailer.smtp_settings = {
-    address:              'smtp.sendgrid.net',
+    address:              'smtp.gmail.com',
     port:                 587,
     domain:               'herokuapp.com',
-    user_name:            ENV["SENDGRID_EMAIL"],
-    password:             ENV["SENDGRID_PASSWORD"],
+    user_name:            ENV["GMAIL_EMAIL"],
+    password:             ENV["GMAIL_PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true  }
 end
