@@ -124,11 +124,11 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false  
   config.action_mailer.default :charset => "utf-8"  
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+    address:              'smtp.ionos.co.uk',
     port:                 587,
     domain:               'herokuapp.com',
-    user_name:            ENV["GMAIL_EMAIL"],
-    password:             ENV["GMAIL_PASSWORD"],
+    user_name:            ENV["IONOS_EMAIL"],
+    password:             ENV["IONOS_PASSWORD"],
     authentication:       'plain',
     enable_starttls_auto: true  }
 end
